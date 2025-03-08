@@ -10,7 +10,7 @@ document.getElementById("orderForm").addEventListener("submit", function(event) 
         return;
     }
 
-    fetch("https://docs.google.com/spreadsheets/d/16esT-z7EOKQJAfWNy3fFaOUIZQu1ejz-mxPuGqebiuw/edit?usp=sharing", {
+    fetch("https://script.google.com/macros/s/AKfycbxPAb2bcKtn-f4JqCgvoy5JcdQ4Onxe8SO3qfiMpu9-iBLA2uQxXZIYKLkDVpCK8VU/exec", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ name, phone, address })
